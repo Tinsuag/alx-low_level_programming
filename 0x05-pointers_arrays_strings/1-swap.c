@@ -1,16 +1,18 @@
-#include "main.h"
 /**
- * void swap_int(int *a, int *b) - used to swap two integers through the use of pointers
- * @a:number one integer
- * @b:number twi ubteger
+ * swap_int - swaps the values of two integers
+ *		using two input parameters
  *
- * Return: always 0.
+ * @a: input parameter 1
+ * @b: input parameter 2
+ *
+ * Return: Nothing
 */
 
 void swap_int(int *a, int *b)
 {
-    int c;
-    c=a;
-    *a=*b;
-    *b=c;
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
