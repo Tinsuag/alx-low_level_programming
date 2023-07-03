@@ -1,10 +1,17 @@
-/***
- * _strlen() -returns the size of a pointer
- * @s: a pointer variable used as a measurement device
- * 
+/**
+ * _strlen - returns the length of a string
+ *
+ * @s: string parameter input
+ *
+ * Return: length of string
 */
 
 int _strlen(char *s)
 {
-    return sizeof(s);
+	int counter;
+
+	for (counter = 0; *s != '\0'; ++s)
+		++counter;
+
+	return (counter);
 }
