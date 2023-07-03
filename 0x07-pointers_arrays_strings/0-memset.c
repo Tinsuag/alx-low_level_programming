@@ -1,11 +1,17 @@
 #include "main.h"
 /**
- * 
+ *_memset - prints the filling element
+ * @s: target
+ * @b: constant byte
+ * @n: number of bytes
+ * Return: returns the value of target 
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-    for (unsigned int i=0; i<n;n++){
-        printf(s[i]=b,"\n");
-    }
-    return s;
+	while(n)
+	{
+		s[n-1]=b;
+		s--;
+	}
+	return (s);
 }
