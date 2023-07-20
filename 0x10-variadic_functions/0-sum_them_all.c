@@ -1,19 +1,27 @@
-#include <Stdliv.h>
 #include <stdarg.h>
-/***
- *sum_them_all(): the function returns the sum of n numbers
+#include <stdio.h>
+/**
+ *sum_them_all - sum of all its parameters
  *@n:-is an arguement implieng the no of arguements
- *@x:-is the returned summ amount.
+ *Return: sum of value
  */
 int sum_them_all(const unsigned int n, ...)
 {
+	unsigned int i;
+	int x = 0;
+
 	va_list args;
-	va_start(args,n);
-	int i;
-	for (i=0; i < n ; n++)
+
+	if (n == 0)
 	{
-		int x = va_arg(args, int);
+		return (x);
 	}
+	va_start(args, n);
+
+	for (i = 0 ; i < n ; i++)
+	{
+		x += va_arg(args, int);
+	}
+	va_end(args);
 	return (x);
 }
-
