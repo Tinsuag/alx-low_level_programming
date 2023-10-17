@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
+#include "main.h"
 /*this will help on inserting a new key and item into the hash table.*/
 hash_t* newItem(int key, int data)
 {

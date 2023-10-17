@@ -6,7 +6,7 @@ void ht_desplay(hashTable_t* table)
     {
         if(ht_hasItem(table, i))
         {
-            item_t* item = table -> array[i];
+            hash_t* item = table -> array[i];
             printf("%d)(%d,%d)\n", i, item -> key, item -> data);
         }
         else
@@ -14,4 +14,5 @@ void ht_desplay(hashTable_t* table)
             printf("%d) empty\n", i);
         }
     }
+    print("\n");
 }

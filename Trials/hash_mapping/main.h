@@ -26,7 +26,8 @@ int ht_hasItem(hashTable_t* table, int idx);
 hash_t* newItem(int key, int data);
 hashTable_t* newHashTable(int size);
 void freeHashTable(hashTable_t* table);
-
+int ht_isFull(hashTable_t *table);
+int hashCode(int key, int size);
 
 
 #endif /* MAIN_H */
